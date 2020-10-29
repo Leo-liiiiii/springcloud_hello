@@ -22,7 +22,6 @@ public class UserController {
     @RequestMapping("/buyMovie")
     public Map<String,Object> buyMovie(@RequestParam("id") Integer id){
         Map<String, Object> map = userService.buyMovie(id);
-        System.out.println("545");
         return map;
 
     }
